@@ -1,0 +1,113 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en" class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>{{ page.title }}</title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+		
+		<!-- Mobile viewport optimized: j.mp/bplateviewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+		<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+		<link rel="stylesheet" href="/960.css" />
+		<link rel="stylesheet" href="/static.css" />
+	</head>
+<body>
+	<header>
+		<div id="top-bar">
+			<div class="container_12">
+				{% if page.hidelogo != true %}
+				<div id="header-logo">
+					<a href="/"><img src="/images/header-logo.png" alt=""></a>
+				</div>
+				{% endif %}
+				<nav id="top-bar-signup" >
+					<ul>
+						<li>
+							<a href="/">HOME</a>
+						</li>
+						<li>
+							<a href="/features.html">FEATURES</a>
+						</li>
+						<li>
+							<a href="/pricing.html">PRICING</a>
+						</li>
+						<li>
+							<a class="green-button" href="/users/sign_up">GET STARTED</a>
+						</li>
+						<li id="login-links" >
+							<a id="support-link" href="#">HELP</a>
+						</li>
+						<li class="yellow" >
+							<a class="yellow" href="/users/sign_in">LOGIN</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+{{ content }}
+	<footer id="footer-outer">
+		<div id="footer-inner">
+			<div class="container_12">		
+
+				<nav class="footer-nav-links inline-block">
+					<h1>SHIFTLY</h1>
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="/features.html">Features</a></li>
+						<li><a href="/pricing.html">Pricing</a></li>
+						<li><a href="/users/sign_up">Sign Up</a></li>
+					</ul>
+				</nav>					
+
+				<nav class="footer-nav-links inline-block">
+					<h1>COMPANY</h1>
+					<ul>
+						<li><a href="http://200okay.com" target="_blank">200 Okay!</a></li>
+						<li><a href="http://200okay.com/blog" target="_blank">Blog</a></li>
+					</ul>
+				</nav>
+				
+				<nav class="footer-nav-links inline-block">
+					<h1>SUPPORT</h1>
+					<ul>
+						<li><a href="#">Help</a></li>
+					</ul>
+				</nav>
+				
+				<nav class="footer-nav-links inline-block">
+					<h1>CONTACT</h1>
+					<ul>
+						<li>info@shiftlyapp.com</li>
+						<li>sales@shiftlyapp.com</li>
+						<li>support@shiftlyapp.com</li>
+					</ul>
+				</nav>
+				
+				<div id="follow-us-links" class="inline-block">
+					<img src="/images/follow-us.png" alt="Follow Us">
+					<a href="http://twitter.com/shiftly" target="_blank"><img src="/images/twitter-bird.png" alt="Twitter"></a>
+					<a href="http://www.facebook.com/shiftly" target="_blank"><img src="/images/facebook-f.png" alt="Facebook"></a>
+				</div>
+				
+				<div id="copyright">
+					&copy; 2012 200 Okay! All rights reserved  |  <a href="/terms.html">Terms of Service</a>  |  <a href="/privacy.html">Privacy Policy</a> 
+				</div>
+				
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
