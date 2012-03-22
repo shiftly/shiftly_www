@@ -99,6 +99,10 @@ body {
 	font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
+body.fourohfour {
+    background: #000;
+}
+
 img { border: none;}
 
 a {
