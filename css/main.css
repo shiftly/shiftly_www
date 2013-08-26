@@ -1,0 +1,167 @@
+html,body{
+  height:100%;
+  font-family: 'Roboto', sans-serif;
+  background-color: #666;
+}
+
+body:after{
+    display:none;
+    content: url(../img/ipadandpen-bg-darkened.jpg) url(../img/deskandpad-bg-darkened.jpg) url(../img/muffins-bg-darkened.jpg) url(../img/wineglasses-bg-darkened.jpg);
+}
+
+.page {
+  height:100%;
+  /*min-width: 500px;*/
+}
+
+.carousel,.item,.active{
+  height:100%;
+  width: 100%;
+}
+
+.one {
+  background: url(../img/ipadandpen-bg-darkened.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.two {
+  background: url(../img/deskandpad-bg-darkened.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.three {
+  background: url(../img/muffins-bg-darkened.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.four {
+  background: url(../img/wineglasses-bg-darkened.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.carousel {
+  margin: 0;
+}
+
+.carousel-inner{height:100%;}
+
+.carousel-controls {
+  position: absolute;
+  top: 40%;
+  left: 15px;
+  margin-top: -20px;
+  color: #fff;
+  text-align: center;
+  /*opacity: .5;
+  filter: alpha(opacity=50);*/
+}
+
+.carousel-controls.right {
+  right: 15px;
+  left: auto;
+}
+
+.carousel-indicators {
+top: auto;
+bottom: 20px;
+}
+
+.carousel-text {
+  position: absolute;
+  top: 30%;
+  /*width: 100%;*/
+  left:40px;
+  right:40px;
+  text-align: center;
+  color: #fff;
+}
+
+img.logo {
+
+}
+
+.topbar {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  /*min-width: 500px;*/
+}
+
+.topbar-inner {
+  padding: 20px;
+
+}
+
+.topbar-inner .btn {
+  margin-top: 5px;
+}
+
+.btn {
+  border: none;
+  border-radius: 25px;
+  text-transform:uppercase; 
+  padding: 10px 50px;
+  font-size: 16px;
+}
+
+.btn.no-style {
+  background: none;
+  color: #fff;
+  padding: 10px 30px;
+}
+
+.carousel-text span {
+  font-size: 20px;
+  font-weight: 100;
+  font-style:italic;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+@media (max-width: 979px) {
+  h3 {
+    font-size: 100px;
+    font-size: 30px;
+    line-height: 30px
+  }
+  .carousel-text span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  h3 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .carousel-text span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 568px) {
+  .topbar a {
+    display: none;
+  }
+  .topbar {
+    text-align: center;
+  }
+}

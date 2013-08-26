@@ -1,2 +1,3 @@
-server: true
-auto: true
+name: Shiftly
+markdown: redcarpet
+pygments: true
