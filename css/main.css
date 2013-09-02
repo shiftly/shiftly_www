@@ -1,7 +1,7 @@
 html,body{
   height:100%;
   font-family: 'Roboto', sans-serif;
-  background-color: #666;
+  background-color: #fff;
 }
 
 body:after{
@@ -13,12 +13,64 @@ body:after{
   height:100%;
   /*min-width: 500px;*/
 }
-
+.above-fold {
+    height: 90%;
+  }
+.carousel {
+  background-color: #666;
+}
 .carousel,.item,.active{
   height:100%;
   width: 100%;
 }
 
+h3 {
+  line-height: 46px;
+}
+
+h4 {
+  text-transform:uppercase; 
+  font-size: 22px;
+}
+
+h5 {
+  text-transform:uppercase; 
+  font-size: 18px;
+}
+
+.captioned {
+  padding: 20px;
+}
+
+.captioned p {
+  padding: 10px 0px;
+}
+
+.grey {
+  background-color: #eee;
+}
+
+.container {
+  padding-top: 40px;
+}
+
+.grey .container {
+  padding-bottom: 20px;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+}
+
+.footer span {
+  font-weight: 100;
+  font-size: 12px;
+}
+
+.row {
+  padding-top: 40px;
+}
 .one {
   background: url(../img/ipadandpen-bg-darkened.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -119,7 +171,7 @@ img.logo {
 .btn.no-style {
   background: none;
   color: #fff;
-  padding: 10px 30px;
+  padding: 10px 20px;
 }
 
 .carousel-text span {
@@ -145,6 +197,9 @@ h3 {
   .carousel-text span {
     font-size: 16px;
   }
+  .captioned {
+    padding: 20px 0px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -152,8 +207,41 @@ h3 {
     font-size: 20px;
     line-height: 20px;
   }
+  .topbar .logo.pull-left {
+  }
+  .above-fold, .topbar, .footer {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
   .carousel-text span {
     font-size: 16px;
+  }
+  .captioned {
+    text-align: center;
+  }
+  .grey {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .grey .container, .grey .row {
+    padding-top: 0px;
+  }
+  .grey [class*="span"]{
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .hide-small {
+    display: none;
+  }
+
+  .footer span {
+    display: block;
+  }
+  .footer .btn {
+    margin-top: 12px;
   }
 }
 
@@ -163,5 +251,24 @@ h3 {
   }
   .topbar {
     text-align: center;
+  }
+  .topbar .logo {
+    float: none;
+  }
+  .footer {
+    text-align: center
+  }
+  .footer .pull-right {
+    float:none;
+  }
+  .footer img {
+    display: none;
+  }
+
+  .footer span {
+    display: none;
+  }
+  .footer .btn {
+    margin-top: 5px;
   }
 }
