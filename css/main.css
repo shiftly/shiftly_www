@@ -56,10 +56,6 @@ h5 {
   background-color: #eee;
 }
 
-.container {
-  padding-top: 40px;
-}
-
 .grey .container {
   padding-bottom: 20px;
 }
@@ -181,13 +177,18 @@ img.logo {
 
 }
 
+.content {
+  padding-top: 90px;
+}
+
 .topbar {
   z-index: 10;
   width: 100%;
   height: 90px;
   /*min-width: 500px;*/
   background-color: #eee;
-  color: #000
+  color: #000;
+  position: absolute;
 }
 
 
@@ -229,6 +230,11 @@ img.logo {
   color: #333;
 }
 
+.btn-green {
+  background-color: #27ae60;
+  color: #fff;
+}
+
 .btn.no-style {
   background: none;
   padding: 10px 20px;
@@ -236,7 +242,6 @@ img.logo {
 }
 
 .topbar.topbar-clear {
-  position: absolute;
   background: transparent;
 }
 
@@ -258,6 +263,11 @@ h3 {
   font-size: 40px;
   font-weight: 300;
 }
+
+.bold {
+  font-weight: 700;
+}
+
 .pricing {
   padding-top: 0;
   padding-bottom: 20px;
