@@ -7,21 +7,23 @@
         <meta name="viewport" content="width=device-width">
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="./css/bootstrap.min.css">
-        <link rel="stylesheet" href="./css/bootstrap-responsive.min.css">
-        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="/css/main.css">
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,100italic,300italic' rel='stylesheet' type='text/css'>
     </head>
     <body>
       <div class="page">
-        <div class="topbar">
+        <div class="topbar{%if page.home%} topbar-clear{% endif %}">
           <div class="topbar-inner">
-            <img class="logo pull-left" src="./img/logo-white.png"/>
+            <a href="/">
+              <img class="logo pull-left" src="/img/logo{%if page.home%}-white{% endif %}.png"/>
+            </a>
             <div>
             <a class="btn no-style pull-right" href="https://app.shiftly.com/">Login</a>
             <a class="btn pull-right" href="https://app.shiftly.com/">Sign Up</a>
-            <a class="btn no-style pull-right" href="#">Pricing</a>
-            <a class="btn no-style pull-right hide-small" href="#">Features</a>
+            <a class="btn no-style pull-right" href="/pricing/">Pricing</a>
+            <a class="btn no-style pull-right hide-small" href="#features">Features</a>
           </div>
           </div>
         </div>
@@ -31,14 +33,14 @@
             <a class="btn no-style pull-right" href="https://app.shiftly.com/">Login</a>
             <a class="btn pull-right" href="https://app.shiftly.com/">Sign Up</a>
             <a class="btn no-style pull-right" href="#">Pricing</a>
-            <img class="logo" src="./img/logo-white.png"/>
+            <img class="logo" src="/img/logo-white.png"/>
             <span>Awesome online rostering</span>
           </div>
         </div>
       </div>
-      <script type="text/javascript" src="./js/jquery-2.0.3.min.js"></script>
-      <script type="text/javascript" src="./js/bootstrap.min.js"></script>
-      <script type="text/javascript" src="./js/shiftly.js"></script>
+      <script type="text/javascript" src="/js/jquery-2.0.3.min.js"></script>
+      <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="/js/shiftly.js"></script>
       <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

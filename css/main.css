@@ -14,7 +14,7 @@ body:after{
   /*min-width: 500px;*/
 }
 .above-fold {
-    height: 90%;
+    height: 70%;
   }
 .carousel {
   background-color: #666;
@@ -36,6 +36,12 @@ h4 {
 h5 {
   text-transform:uppercase; 
   font-size: 18px;
+}
+
+.byline {
+  font-style:italic;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .captioned {
@@ -63,14 +69,45 @@ h5 {
   color: #fff;
 }
 
+.row {
+  padding-top: 40px;
+}
+
+.questions {
+  text-align: left;
+  background-color: #eee;
+  padding: 0px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.questions .row {
+  padding-top: 0;
+}
+.questions .questions-inner {
+  padding: 10px 20px;
+}
+
+.questions .question {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.questions .answer {
+  margin-bottom: 20px;
+}
+
 .footer span {
   font-weight: 100;
   font-size: 12px;
 }
 
-.row {
-  padding-top: 40px;
+.row.bylines {
+  padding-top: 30px;
 }
+
 .one {
   background: url(../img/ipadandpen-bg-darkened.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -145,19 +182,41 @@ img.logo {
 }
 
 .topbar {
-  position: absolute;
   z-index: 10;
   width: 100%;
+  height: 90px;
   /*min-width: 500px;*/
+  background-color: #eee;
+  color: #000
 }
+
+
 
 .topbar-inner {
   padding: 20px;
 
 }
 
-.topbar-inner .btn {
+.topbar .btn {
   margin-top: 5px;
+  background-color: #333;
+  color: #fff;
+}
+
+.topbar .btn.no-style {
+  color: #333;
+}
+
+.topbar.topbar-clear .btn {
+  margin-top: 5px;
+  background-color: #fff;
+  color: #333;
+}
+
+.topbar.topbar-clear .btn.no-style {
+  background: none;
+  padding: 10px 20px;
+  color: #fff;
 }
 
 .btn {
@@ -166,12 +225,19 @@ img.logo {
   text-transform:uppercase; 
   padding: 10px 50px;
   font-size: 16px;
+  background-color: #eee;
+  color: #333;
 }
 
 .btn.no-style {
   background: none;
-  color: #fff;
   padding: 10px 20px;
+  color: #fff;
+}
+
+.topbar.topbar-clear {
+  position: absolute;
+  background: transparent;
 }
 
 .carousel-text span {
@@ -183,9 +249,46 @@ img.logo {
   padding-bottom: 20px;
 }
 
+h2 {
+  font-size: 48px;
+  font-weight: 300;
+}
+
 h3 {
   font-size: 40px;
   font-weight: 300;
+}
+.pricing {
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+.pricing [class*="span"] {
+  background-color: #333;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.banner {
+  margin-bottom: 0;
+  background-color: #2980b9;
+  color: #fff;
+  text-transform:uppercase;
+  padding: 5px 0px;
+}
+.pricing .item {
+  padding: 20px 0px;
+}
+
+.pricing .cost {
+  font-size: 48px;
+  line-height: 100px;
+}
+
+.pricing .free {
+  color: #fff;
+}
+
+.pricing .extra {
+  font-style:italic;
 }
 
 @media (max-width: 979px) {
@@ -246,7 +349,7 @@ h3 {
 }
 
 @media (max-width: 568px) {
-  .topbar a {
+  .topbar .btn {
     display: none;
   }
   .topbar {
