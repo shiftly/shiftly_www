@@ -215,6 +215,12 @@ img.logo {
   color: #fff;
 }
 
+.topbar .btn:hover {
+  margin-top: 5px;
+  background-color: #444;
+  color: #fff;
+}
+
 .topbar .btn.no-style {
   color: #333;
 }
@@ -222,6 +228,12 @@ img.logo {
 .topbar.topbar-clear .btn {
   margin-top: 5px;
   background-color: #fff;
+  color: #333;
+}
+
+.topbar.topbar-clear .btn:hover {
+  margin-top: 5px;
+  background-color: #eee;
   color: #333;
 }
 
@@ -241,8 +253,23 @@ img.logo {
   color: #333;
 }
 
+.btn:hover {
+  border: none;
+  border-radius: 25px;
+  text-transform:uppercase; 
+  padding: 10px 50px;
+  font-size: 16px;
+  background-color: #ddd;
+  color: #333;
+}
+
 .btn-green {
   background-color: #27ae60;
+  color: #fff;
+}
+
+.btn-green:hover {
+  background-color: #2ecc71;
   color: #fff;
 }
 
