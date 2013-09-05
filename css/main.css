@@ -48,6 +48,16 @@ h5 {
   padding: 20px;
 }
 
+.quotes {
+  margin-top: 20px;
+}
+
+.quote {
+  font-size: 20px;
+  line-height: 30px;
+  font-style: italic;
+}
+
 .captioned p {
   padding: 10px 0px;
 }
