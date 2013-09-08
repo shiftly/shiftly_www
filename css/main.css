@@ -254,13 +254,14 @@ img.logo {
 }
 
 .btn:hover {
-  border: none;
-  border-radius: 25px;
-  text-transform:uppercase; 
-  padding: 10px 50px;
-  font-size: 16px;
   background-color: #ddd;
-  color: #333;
+}
+
+.btn-big {
+  padding: 20px 40px;
+  border-radius: 30px;
+  font-size: 20px;
+  margin-bottom: 30px;
 }
 
 .btn-green {
@@ -273,7 +274,7 @@ img.logo {
   color: #fff;
 }
 
-.btn.no-style {
+.btn.no-style, .btn.no-style:hover {
   background: none;
   padding: 10px 20px;
   color: #fff;
@@ -345,6 +346,23 @@ h3 {
   font-style:italic;
 }
 
+.subheader {
+  padding-top: 10px;
+}
+
+.important p{
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.important b{
+  color: #d35400;
+  font-size: 22px;
+  letter-spacing: -1px;
+  white-space: nowrap;
+}
+
 @media (max-width: 979px) {
   h3 {
     font-size: 100px;
@@ -360,6 +378,9 @@ h3 {
 }
 
 @media (max-width: 767px) {
+  h2 {
+    font-size: 40px;
+  }
   h3 {
     font-size: 20px;
     line-height: 20px;
