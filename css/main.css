@@ -356,6 +356,13 @@ h3 {
   font-weight: 300;
 }
 
+.important p.point{
+  color: #d35400;
+  font-size: 22px;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+
 .important b{
   color: #d35400;
   font-size: 22px;
