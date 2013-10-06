@@ -170,7 +170,10 @@ h5 {
 
 .carousel-indicators {
 top: auto;
-bottom: 20px;
+bottom: 5px;
+width: auto;
+left: auto;
+right: 15px;
 }
 
 .carousel-text {
@@ -313,13 +316,14 @@ h3 {
   font-weight: 700;
 }
 
+.features img.img-responsive {
+  margin: 0 auto;
+}
+
 .pricing {
-  padding-top: 0;
   padding-bottom: 20px;
 }
-.pricing [class*="span"] {
-  background-color: #333;
-  color: #fff;
+.pricing [class*="col-"] {
   margin-bottom: 20px;
 }
 .banner {
@@ -330,7 +334,21 @@ h3 {
   padding: 5px 0px;
 }
 .pricing .item {
-  padding: 20px 0px;
+  padding-bottom: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.pricing .package {
+  padding: 5px 0;
+}
+
+.pricing .pro {
+  background-color: #2980b9;
+}
+
+.pricing .starter {
+  background-color: #95a5a6;
 }
 
 .pricing .cost {
@@ -394,10 +412,6 @@ h3 {
   }
   .topbar .logo.pull-left {
   }
-  .above-fold, .topbar, .footer {
-    margin-left: -20px;
-    margin-right: -20px;
-  }
   .carousel-text span {
     font-size: 16px;
   }
@@ -441,7 +455,8 @@ h3 {
     float: none;
   }
   .footer {
-    text-align: center
+    text-align: center;
+    min-height: 90px;
   }
   .footer .pull-right {
     float:none;
