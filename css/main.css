@@ -265,7 +265,9 @@ img.logo {
   border-radius: 30px;
   font-size: 20px;
   margin-bottom: 30px;
-}
+  display: block;
+  white-space: normal;
+} 
 
 .btn-green {
   background-color: #27ae60;
