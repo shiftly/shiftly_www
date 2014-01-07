@@ -1,11 +1,12 @@
 $('#myCarousel .carousel-text').hide();
+$('#myCarousel .carousel-image').hide();
 $('#myCarousel .active .carousel-text').show();
+$('#myCarousel .active .carousel-image').show();
 $('.carousel').carousel();
 
-$('#myCarousel').on('slide',function(){
-    $('#myCarousel .active .carousel-text').fadeOut(300);
-});
-
 $('#myCarousel').on('slid',function(){
-    $('#myCarousel .active .carousel-text').fadeIn();
+    $('#myCarousel .carousel-text').hide();
+	$('#myCarousel .carousel-image').hide();
+    $('#myCarousel .active .carousel-text').fadeIn(300);
+    $('#myCarousel .active .carousel-image').fadeIn(1000);
 });
