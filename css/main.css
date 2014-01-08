@@ -15,6 +15,7 @@ body:after{
 }
 .above-fold {
     height: 70%;
+    min-height: 400px;
   }
 .carousel {
   background-color: #666;
@@ -86,16 +87,11 @@ h5 {
   color: #fff;
 }
 
-.row {
-  padding-top: 40px;
-}
-
 .questions {
+  margin-top: 40px;
   text-align: left;
   background-color: #eee;
   padding: 0px;
-  border-radius: 10px;
-  margin-bottom: 20px;
 }
 
 .questions .row {
@@ -189,7 +185,8 @@ right: 15px;
 
 .carousel-text {
   position: absolute;
-  top: 30%;
+  /*top: 30%;*/
+  padding-top: 100px;
   /*width: 100%;*/
   left:40px;
   right:40px;
@@ -313,15 +310,13 @@ img.logo {
   font-size: 40px;
   font-weight: 100;
   display: block;
-  padding-top: 10px;
-  padding-bottom: 20px;
 }
 
 .carousel-text span.caps {
   text-transform:uppercase;
   font-weight: 700;
   font-size: 60px;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
 }
 
 h2 {
@@ -342,7 +337,12 @@ h3 {
   margin: 0 auto;
 }
 
+h2.pricing {
+  padding-top 40px;
+}
+
 .pricing {
+  padding-top: 40px;
   padding-bottom: 20px;
 }
 .pricing [class*="col-"] {
@@ -359,13 +359,10 @@ h3 {
   padding-bottom: 20px;
   background-color: #333;
   color: #fff;
-  border-radius: 15px;
 }
 
 .pricing .package {
   padding: 5px 0;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
 }
 
 .pricing .pro {
@@ -496,4 +493,8 @@ h3 {
   .footer .btn {
     margin-top: 5px;
   }
+}
+
+.toppad {
+  padding-top: 80px;
 }
