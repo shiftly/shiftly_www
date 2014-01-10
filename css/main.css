@@ -14,8 +14,7 @@ body:after{
   /*min-width: 500px;*/
 }
 .above-fold {
-    height: 70%;
-    min-height: 400px;
+    height: 550px;
   }
 .carousel {
   background-color: #666;
@@ -32,7 +31,7 @@ body:after{
 }
 
 .carousel-image img {
-  margin-left: -250px;
+  margin-left: -200px;
   opacity:0.9;
 }
 
@@ -307,7 +306,7 @@ img.logo {
 }
 
 .carousel-text span {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 100;
   display: block;
 }
@@ -315,8 +314,9 @@ img.logo {
 .carousel-text span.caps {
   text-transform:uppercase;
   font-weight: 700;
-  font-size: 60px;
-  padding-bottom: 10px;
+  font-size: 80px;
+  line-height: 80px;
+  padding-bottom: 30px;
 }
 
 h2 {
